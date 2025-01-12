@@ -1,25 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilory';
+    font-family: neu;
 }
 
-html,body{
+html, body {
     height: 100%;
     width: 100%;
 }
 
-#main{
-    width: 100%;
-    height: 100%;
+#main {
+    /* background-color: #000; */
+    position: relative;
+    z-index: 10;
 }
 
-#page1{
+#page1 {
+    min-height: 100vh;
     width: 100%;
-    height: 100%;
-    background-color: #EFEAE3;;
-} 
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+}
 
 nav {
     padding: 2vw 0vw;
@@ -80,4 +83,34 @@ nav {
 
 nav h3 {
     display: none;
+}
+
+#center {
+    height: 65vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2.5vw;
+}
+
+#left h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+
+#center h1 {
+    font-size: 10vw;
+    text-align: right;
+    line-height: 8vw;
+}
+
+#page1 video{
+    border-radius: 30px;
+    margin-top: 4vw;
+    width: 100%;
+    
 }
